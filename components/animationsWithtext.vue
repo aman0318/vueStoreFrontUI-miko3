@@ -2,8 +2,85 @@
   <SfSection title-heading="" subtitle-heading="" class="title">
    <SfHeading title="Additional highlights" :level="2" class="h2_miko3"/>
    <div class="bannerImg">
-        <img src="/icons/images/about-banner.png" alt="banner" />
-      </div>
+          <div class="">
+             <div class="animations_container_mob">
+                <div :class="customClasses['icon-1']">
+                    <div  v-if="header =='Study budy'">
+                      <img src="/icons/images/playMiko3.png"  class="img"/>
+                    </div>
+                    <div class="rollIcons"  v-else-if="header=='Integrated learning'">
+                        <img src="/icons/star 43.svg" alt="img1" />
+                    </div>
+                    <div class="rollIcons"  v-else>
+                        <img src="/icons/star 43.svg" alt="img1" />
+                    </div>
+                </div>
+                <div :class="customClasses['icon-2']">
+                  <div class="rollIcons" v-if="header =='Integrated learning'">
+                    <img src="/icons/Polygon 5.svg" alt="img2" />
+                  </div>
+                  <div class="rollIcons" v-else-if="header=='Study budy'">
+                    <img src="/icons/Polygon 5.svg" alt="img2" />
+                  </div>
+                  <div class="rollIcons" v-show="header =='Screentime evolved' || header =='' ">
+                    <img src="/icons/Polygon 5.svg" alt="img2" />
+                  </div>
+                </div>
+                <div :class="customClasses['icon-3']">
+                  <div class="">
+                    <img src="/icons/Ellipse 75.svg" alt="img3" />
+                  </div>
+                </div>
+                <div :class="customClasses['icon-4']">
+                  <div id="triangle-up" v-if="header =='Integrated learning'">
+                    <img src="/icons/images/triangle.png" alt="study budy" />
+                  </div>
+                
+                  <div class="" v-else>
+                    <img src="/icons/Polygon 7.svg" alt="img4" />
+                  </div>
+                
+                </div>
+                <div :class="customClasses['icon-5']">
+                  <div class="" v-if="header =='Screentime evolved'">
+                    <img src="/icons/images/studyround.png" alt="study with miko2" />
+                  </div>
+                  <div class="" v-else>
+                    <img src="/icons/Rectangle 261.svg" alt="img5" />
+                  </div>
+                  
+                </div>
+                <div :class="customClasses['icon-6']">
+                  <div class="">
+                    <img src="/icons/Rectangle 12.svg" alt="img7" />
+                  </div>
+                </div>
+                <div :class="customClasses['icon-7']">
+                  <div class="rollIcons" v-if="header =='Integrated learning'">
+                    <img src="/icons/star 42.svg" alt="study" />
+                  </div>
+                  <div class="rollIcons" v-else-if="header=='Study budy'">
+                  <img src="/icons/star 42.svg" alt="study" />
+                  </div>
+                  <div class="rollIcons" v-show="header =='Screentime evolved' || header =='' ">
+                  <img src="/icons/star 42.svg" alt="study" />
+                  </div>
+                </div>
+                <div :class="customClasses['icon-8']">
+                  <div class="rollIcons" v-if="header =='Integrated learning'">
+                    <img src="/icons/union.svg" alt="study" />
+                  </div>
+                  <div class="rollIcons" v-else-if="header=='Study budy'">
+                      <img src="/icons/union.svg" alt="study" />
+                  </div>
+                  <div class="rollIcons" v-show="header =='Screentime evolved' || header =='' ">
+                      <img src="/icons/union.svg" alt="study" />
+                  </div>
+                </div>
+          
+              </div>
+          </div>
+    </div>
     <div class="grid ">
       
       <div class="grid__row">
@@ -263,35 +340,146 @@ export default {
   display: none;
    @include for-mobile {
      display: block;
-     img{
+     .mobileImg{
       width: 100%;
      }
      
    }
 }
-.grid {
-  display: flex;
-  max-height: 20.625rem;
-  width: 100%;
-  justify-content: center;
-  margin: 0;
-  @include for-desktop {
-    max-height: 40.625rem;
-    max-width: 60rem;
-    margin:0 3rem;
-    // .bannerImg{
-    //   display: none;
-    // }
-  }
-     @include for-mobile {
-        display: block;
-        .animations_container{
-          display: none;
-        }
-        // .bannerImg{
-        //   display: block;
-        // }
+.animations_container_mob{
+  position: relative;
+      height: 15rem;
+      .withcircleImg_icon1{
+        top: 5%;
+        animation: popDiv .5s alternate ease-in-out;
+        position: absolute;
+        left: 10%;
+          img{
+            height: 7rem;
+          }
     }
+    .withAnimImg_icon5{
+      top: 30%;
+    left: 30%;
+    position: absolute;
+    animation: popDiv .5s alternate ease-in-out;
+    img{
+         height: 6rem; 
+    }
+    }
+    .withicon5_icon6{
+      left: 35%;
+      top: 60%;
+      transform: rotate(90deg);
+       animation: roll90 2s alternate ease-in-out;
+     position: absolute;
+     img{
+       height: 3rem;
+     }
+
+    }
+    .withicon5_icon4{
+      top: 28%;
+    position: absolute;
+    left: 65%;
+    img{
+      height: 3rem;
+    }
+    }
+    .withAnimImg_icon4{
+    top: 22%;
+    position: absolute;
+    left: 62%;
+     
+      img{
+        height: 5.5rem;
+      }
+       animation: popDiv .5s alternate ease-in-out;
+    }
+    .withicon4_icon6{
+      left: 35%;
+      top: 60%;
+      transform: rotate(
+        0deg);
+    position: absolute;
+     img{
+     height: 4rem;
+    }
+    }
+    .icon-1{
+          top: 5%;
+          position: absolute;
+          left: 15%;
+        img{
+        height: 3rem;
+        }
+     }
+      .icon-2{
+           top: 0%;
+        left: 45%;
+        position: absolute;
+         img{
+        height: 3rem;
+        }
+        
+    }
+      .icon-3{
+            top: 13%;
+          left: 65%;
+        position: absolute;
+         img{
+        height: 3rem;
+        }
+        
+        
+    }
+      .icon-4{
+          top: 40%;
+        position: absolute;
+        left: 70%;
+         animation: rollicons 2s alternate ease-in-out;
+          img{
+        height: 3rem;
+        }
+    }
+      .icon-5{
+         top: 30%;
+         left: 35%;
+        position: absolute;
+         img{
+          height: 5.5rem;
+        }
+    }
+    .icon-6{
+       top: 70%;
+      left: 30%;
+
+        position: absolute;
+         img{
+       height: 4rem;
+        }
+    }
+      .icon-7{
+           top: 66%;
+    position: absolute;
+    left: 60%;
+     img{
+        height: 3rem;
+        }
+        
+    }
+     .icon-8{
+       top: 35%;
+        left: 10%;
+        position: absolute;
+         img{
+        height: 4rem;
+        }
+        
+      }
+  
+}
+ 
   .animations_container{
     position: relative;
     width: 100%;
@@ -397,7 +585,7 @@ export default {
           height: 5.5rem;
         }
     }
-      .icon-6{
+    .icon-6{
        top: 40%;
       left: 35%;
 
@@ -511,6 +699,30 @@ export default {
         transform: rotate(90deg);
       }
     }
+.grid {
+  display: flex;
+  max-height: 20.625rem;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  @include for-desktop {
+    max-height: 40.625rem;
+    max-width: 60rem;
+    margin:0 3rem;
+    // .bannerImg{
+    //   display: none;
+    // }
+  }
+     @include for-mobile {
+        display: block;
+        .animations_container{
+          display: none;
+        }
+        // .bannerImg{
+        //   display: block;
+        // }
+    }
+
     
   &__row {
     display: flex;
