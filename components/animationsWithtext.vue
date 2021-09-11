@@ -469,7 +469,7 @@ export default {
           top: 40%;
     position: absolute;
     left: 80%;
-        transform: rotate(180deg);
+       // transform: rotate(180deg);
          animation: rollicons 0.5s alternate ease-out 0s;
           img{
         height: 3rem;
@@ -771,8 +771,8 @@ export default {
           top: 27%;
         position: absolute;
         left: 80%;
-        transform: rotate(180deg);
-         animation: rollicons 0.5s alternate ease-out 0s;
+       // transform: rotate(180deg);
+         animation: ease-out 0s;
           img{
         height: 3rem;
         }
