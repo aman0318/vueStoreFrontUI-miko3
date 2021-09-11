@@ -258,10 +258,11 @@ export default {
             this.customClasses['icon-5'] ='withAnimImg_icon5';
             this.customClasses['icon-6'] ='withicon5_icon6';
             this.customClasses['icon-4'] ='withicon5_icon4';
+            this.customClasses['icon-3'] ='withicon5_icon3';
           }
           if(this.header =='Integrated learning'){
              this.customClasses['icon-1'] ='icon-1';
-            this.customClasses['icon-5'] ='withAnimImg_icon5';
+            this.customClasses['icon-5'] ='withicon4_icon5';
             this.customClasses['icon-6'] ='withicon4_icon6';
             this.customClasses['icon-4'] ='withAnimImg_icon4';
           }
@@ -346,269 +347,471 @@ export default {
      
    }
 }
-.animations_container_mob{
-  position: relative;
-      height: 15rem;
-      .withcircleImg_icon1{
+ .animations_container_mob{
+    position: relative;
+     height: 15rem;
+    .withcircleImg_icon1{
         top: 5%;
-        animation: popDiv .5s alternate ease-in-out;
-        position: absolute;
-        left: 10%;
-          img{
-            height: 7rem;
-          }
+          position: absolute;
+          left: 5%;
+          transform: scale(1.2);
+           animation: stretch-icon1 .5s alternate ease-in-out;
+        img{
+        height: 7.5rem;
+        }
     }
     .withAnimImg_icon5{
-      top: 30%;
-    left: 30%;
-    position: absolute;
-    animation: popDiv .5s alternate ease-in-out;
-    img{
-         height: 6rem; 
+            top: 35%;
+       left: 30%;
+        position: absolute;
+       transform: scale(1.2);
+         animation: stretch-icon1 .5s alternate ease-in-out;
+         img{
+          height: 6.5rem;
+        }
     }
+    .withicon4_icon5{
+         top: 35%;
+       left: 33%;
+      position: absolute;
+      animation: popDiv .5s alternate ease-in-out;
+      img{
+          height: 7.5rem; 
+      }
     }
     .withicon5_icon6{
-      left: 35%;
-      top: 60%;
-      transform: rotate(90deg);
-       animation: roll90 2s alternate ease-in-out;
+       top: 75%;
+    left: 25%;
+        transform: rotate(
+    75deg);
+    position: absolute;
+       animation: roll90 .5s alternate ease-out 0s;
      position: absolute;
      img{
-       height: 3rem;
+       height: 5rem;
      }
 
     }
     .withicon5_icon4{
-      top: 28%;
+           top: 40%;
     position: absolute;
-    left: 65%;
-    img{
-      height: 3rem;
+    left: 80%;
+        transform: scale(1.2);
+          animation: stretch-icon1 .5s alternate ease-in-out;
+          img{
+        height: 3rem;
+        }
     }
+    .withicon5_icon3{
+                top: 15%;
+    left: 70%;
+        position: absolute;
+        transform: scale(1.2);
+        animation: stretch-icon1 .5s alternate ease-in-out;
+         img{
+        height: 5rem;
+        }
     }
     .withAnimImg_icon4{
-    top: 22%;
+              top: 40%;
     position: absolute;
-    left: 62%;
-     
-      img{
-        height: 5.5rem;
-      }
-       animation: popDiv .5s alternate ease-in-out;
+    left: 80%;
+        transform: scale(1.5);
+          animation: stretch-icon5 .5s alternate ease-in-out;
+          img{
+        height: 3rem;
+        }
     }
     .withicon4_icon6{
-      left: 35%;
-      top: 60%;
+        top: 75%;
+    left: 25%;
+       animation: popDiv .5s alternate ease-in-out;
       transform: rotate(
         0deg);
-    position: absolute;
-     img{
-     height: 4rem;
+        position: absolute;
+        img{
+        height: 5rem;
+        }
     }
-    }
-    .icon-1{
+      .icon-1{
           top: 5%;
           position: absolute;
-          left: 15%;
+          left: 5%;
+           animation: popDiv .5s alternate ease-in-out;
         img{
-        height: 3rem;
+        height: 5rem;
         }
      }
       .icon-2{
            top: 0%;
         left: 45%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
          img{
-        height: 3rem;
+        height: 5rem;
         }
         
     }
       .icon-3{
-            top: 13%;
-          left: 65%;
+          top: 10%;
+    left: 70%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
+//         transform: rotate(
+// -20deg);
          img{
-        height: 3rem;
+        height: 5rem;
         }
         
         
     }
       .icon-4{
           top: 40%;
-        position: absolute;
-        left: 70%;
-         animation: rollicons 2s alternate ease-in-out;
+    position: absolute;
+    left: 80%;
+        transform: rotate(180deg);
+         animation: rollicons 0.5s alternate ease-out 0s;
           img{
         height: 3rem;
         }
     }
       .icon-5{
-         top: 30%;
-         left: 35%;
+         top: 35%;
+       left: 30%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
          img{
-          height: 5.5rem;
+          height: 6.5rem;
         }
     }
     .icon-6{
-       top: 70%;
-      left: 30%;
-
+      top: 75%;
+    left: 25%;
+       animation: popDiv .5s alternate ease-in-out;
         position: absolute;
          img{
-       height: 4rem;
+       height: 5rem;
         }
     }
       .icon-7{
-           top: 66%;
+         top: 75%;
     position: absolute;
-    left: 60%;
+    left: 55%;
+       animation: popDiv .5s alternate ease-in-out;
      img{
-        height: 3rem;
+        height: 4rem;
         }
         
     }
      .icon-8{
-       top: 35%;
-        left: 10%;
+       top: 40%;
+        left: 5%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
          img{
-        height: 4rem;
+        height: 5rem;
         }
         
-      }
-  
+  }
 }
+// .animations_container_mob{
+//   position: relative;
+//       height: 15rem;
+//       .withcircleImg_icon1{
+//         top: 5%;
+//         animation: popDiv .5s alternate ease-in-out;
+//         position: absolute;
+//         left: 10%;
+//           img{
+//             height: 7rem;
+//           }
+//     }
+//     .withAnimImg_icon5{
+//       top: 30%;
+//     left: 30%;
+//     position: absolute;
+//     animation: popDiv .5s alternate ease-in-out;
+//     img{
+//          height: 6rem; 
+//     }
+//     }
+//     .withicon5_icon6{
+//       left: 35%;
+//       top: 60%;
+//       transform: rotate(90deg);
+//        animation: roll90 .5s alternate ease-out 0s;
+//      position: absolute;
+//      img{
+//        height: 3rem;
+//      }
+
+//     }
+//     .withicon5_icon4{
+//       top: 28%;
+//     position: absolute;
+//     left: 65%;
+//     img{
+//       height: 3rem;
+//     }
+//     }
+//     .withAnimImg_icon4{
+//     top: 22%;
+//     position: absolute;
+//     left: 62%;
+     
+//       img{
+//         height: 5.5rem;
+//       }
+//        animation: popDiv .5s alternate ease-in-out;
+//     }
+//     .withicon4_icon6{
+//       left: 35%;
+//       top: 60%;
+//       transform: rotate(
+//         0deg);
+//     position: absolute;
+//      img{
+//      height: 4rem;
+//     }
+//     }
+//     .icon-1{
+//           top: 5%;
+//           position: absolute;
+//           left: 15%;
+//         img{
+//         height: 3rem;
+//         }
+//      }
+//       .icon-2{
+//            top: 0%;
+//         left: 45%;
+//         position: absolute;
+//          img{
+//         height: 3rem;
+//         }
+        
+//     }
+//       .icon-3{
+//             top: 13%;
+//           left: 65%;
+//         position: absolute;
+//          img{
+//         height: 3rem;
+//         }
+        
+        
+//     }
+//       .icon-4{
+//           top: 40%;
+//         position: absolute;
+//         left: 70%;
+//          animation: rollicons .5s alternate ease-out 0s;
+//           img{
+//         height: 3rem;
+//         }
+//     }
+//       .icon-5{
+//          top: 30%;
+//          left: 35%;
+//         position: absolute;
+//          img{
+//           height: 5.5rem;
+//         }
+//     }
+//     .icon-6{
+//        top: 70%;
+//       left: 30%;
+
+//         position: absolute;
+//          img{
+//        height: 4rem;
+//         }
+//     }
+//       .icon-7{
+//            top: 66%;
+//     position: absolute;
+//     left: 60%;
+//      img{
+//         height: 3rem;
+//         }
+        
+//     }
+//      .icon-8{
+//        top: 35%;
+//         left: 10%;
+//         position: absolute;
+//          img{
+//         height: 4rem;
+//         }
+        
+//       }
+  
+// }
  
   .animations_container{
     position: relative;
     width: 100%;
     height: 100%;
     .withcircleImg_icon1{
-        top: 0%;
-        position: absolute;
-        animation: popDiv .5s alternate ease-in-out;
-        left: 10%;
-          img{
-            height: 120px;
-          }
+        top: 5%;
+          position: absolute;
+          left: 15%;
+          transform: scale(1.2);
+           animation: stretch-icon1 .5s alternate ease-in-out;
+        img{
+        height: 7.5rem;
+        }
     }
     .withAnimImg_icon5{
-      top: 20%;
-    left: 40%;
-    position: absolute;
-    animation: popDiv .5s alternate ease-in-out;
-    img{
-         height: 120px; 
+        top: 20%;
+         left: 40%;
+        position: absolute;
+        transform: scale(1.5);
+         animation: stretch-icon5 .5s alternate ease-in-out;
+         img{
+          height: 6.5rem;
+        }
     }
+    .withicon4_icon5{
+       top: 20%;
+      left: 34%;
+      position: absolute;
+      animation: popDiv .5s alternate ease-in-out;
+      img{
+          height: 7.5rem; 
+      }
     }
     .withicon5_icon6{
-      left: 40%;
-      top: 40%;
-      transform: rotate(90deg);
-       animation: roll90 2s alternate ease-in-out;
+      top: 42%;
+        transform: rotate(
+    75deg);
+    left: 35%;
+    position: absolute;
+       animation: roll90 .5s alternate ease-out 0s;
      position: absolute;
      img{
-       height: 4rem;
+       height: 5rem;
      }
 
     }
     .withicon5_icon4{
-      top: 28%;
-    position: absolute;
-    left: 90%;
-    img{
-      height: 4rem;
+       top: 27%;
+        position: absolute;
+        left: 80%;
+        transform: scale(1.5);
+          animation: stretch-icon5 .5s alternate ease-in-out;
+          img{
+        height: 3rem;
+        }
     }
+    .withicon5_icon3{
+               top: 10%;
+          left: 75%;
+        position: absolute;
+        transform: scale(1.2);
+        animation: stretch-icon1 .5s alternate ease-in-out;
+         img{
+        height: 5rem;
+        }
     }
     .withAnimImg_icon4{
     top: 15%;
     position: absolute;
-    left: 80%;
+    left: 75%;
      
       img{
-        height: 100px;
+        height: 7.5rem;
       }
        animation: popDiv .5s alternate ease-in-out;
     }
     .withicon4_icon6{
       left: 40%;
       top: 40%;
+       animation: popDiv .5s alternate ease-in-out;
       transform: rotate(
         0deg);
-    position: absolute;
-     img{
-     height: 4rem;
-    }
+        position: absolute;
+        img{
+        height: 5rem;
+        }
     }
       .icon-1{
           top: 5%;
           position: absolute;
-          left: 30%;
+          left: 15%;
+           animation: popDiv .5s alternate ease-in-out;
         img{
-        height: 4rem;
+        height: 5rem;
         }
      }
       .icon-2{
            top: 0%;
-        left: 55%;
+        left: 45%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
          img{
-        height: 4rem;
+        height: 5rem;
         }
         
     }
       .icon-3{
             top: 10%;
-          left: 85%;
+          left: 75%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
+//         transform: rotate(
+// -20deg);
          img{
-        height: 4rem;
+        height: 5rem;
         }
         
         
     }
       .icon-4{
-          top: 30%;
+          top: 27%;
         position: absolute;
-        left: 90%;
-         animation: rollicons 2s alternate ease-in-out;
+        left: 80%;
+        transform: rotate(180deg);
+         animation: rollicons 0.5s alternate ease-out 0s;
           img{
-        height: 40px;
+        height: 3rem;
         }
     }
       .icon-5{
          top: 20%;
          left: 40%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
          img{
-          height: 5.5rem;
+          height: 6.5rem;
         }
     }
     .icon-6{
        top: 40%;
-      left: 35%;
-
+      left: 30%;
+       animation: popDiv .5s alternate ease-in-out;
         position: absolute;
          img{
-       height: 4rem;
+       height: 6rem;
         }
     }
       .icon-7{
-           top: 45%;
-    position: absolute;
-    left: 70%;
+      top: 45%;
+      position: absolute;
+      left: 65%;
+       animation: popDiv .5s alternate ease-in-out;
      img{
-        height: 40px;
+        height: 4rem;
         }
         
     }
      .icon-8{
-       top: 20%;
+       top: 25%;
         left: 15%;
         position: absolute;
+         animation: popDiv .5s alternate ease-in-out;
          img{
-        height: 60px;
+        height: 5rem;
         }
         
   }
@@ -630,10 +833,11 @@ export default {
     }
   
     .rollIcons{
-       animation: rollicons 2s alternate ease-in-out;
+      transform: rotate(180deg);
+       animation: rollicons .5s alternate ease-out 0s;
     }
     .rotate90{
-       animation: popDiv 2s alternate ease-in-out;
+       animation: popDiv .5s alternate ease-out 0s;
     }
     .smimg{
       height: 60px;
@@ -650,7 +854,7 @@ export default {
   }
   #playImg-container{
     img{
-        animation: popDiv 2s alternate ease-in-out;
+        animation: popDiv .5s alternate ease-in-out;
         clip-path: polygon(50% 1%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
 
     }
@@ -699,6 +903,37 @@ export default {
         transform: rotate(90deg);
       }
     }
+    @keyframes stretch-icon1 {
+      0% {
+        transform: scale(.3);
+        
+      }
+      50% {
+        transform: scale(.7);
+      }
+      75% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+  }
+   @keyframes stretch-icon5 {
+      0% {
+        transform: scale(.3);
+        
+      }
+      50% {
+        transform: scale(.7);
+      }
+      75% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1.5);
+      }
+  }
+
 .grid {
   display: flex;
   max-height: 20.625rem;
